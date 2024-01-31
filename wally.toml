@@ -1,27 +1,12 @@
 [package]
-name = "matter-ecs/plasma"
-description = "A declarative, immediate mode UI widget library for Roblox"
-version = "0.4.2"
-license = "MIT"
-authors = [
-    "Eryn L. K.",
-    "Lucas Gangstad <lucas@lasttalon.dev>",
-    "Ukendio <ukendio@gmail.com>",
-]
+name = "ukendio/solid"
+version = "0.1.0"
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
-exclude = [
-    "example",
-    "docs",
-    "Packages",
-    ".moonwave",
-    "build",
-    "pages",
-    "tests",
-    "stories",
-    "plasma.rbxm",
-    "roblox.toml",
-]
 
-[dependencies]
+include = ["default.project.json", "out", "out/**", "wally.toml"]
+exclude = ["**"]
+
+[dev-dependencies]
 TestEZ = "roblox/testez@0.4.1"
+
